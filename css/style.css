@@ -1,29 +1,38 @@
+:root {
+
+/* Spacing  -------------------- */
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 40px;
+}
+
 /* Base Styles -------------------- */
 *, *:before, *:after {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  body {
-    color: grey;
-    margin: 0;
-    font: 1rem/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color:black;
-  }
+body {
+  color: white;
+  margin: 0;
+  font: 1rem/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:black;
+}
 
-  h1 {
-    font-size: 5.625rem; /* 90px/16px  */
-    color: white;
-    text-transform: uppercase;
-    font-weight: normal;
-    line-height: 1.3;
-    /* text-shadow: 0 1px 1px rgb(0, 0, 0, .8); */
-  }
+h1 {
+  font-size: 5.625rem; /* 90px/16px  */
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  /* text-shadow: 0 1px 1px rgb(0, 0, 0, .8); */
+}
 
-  img {
-    max-width: 100%;
-  }
+img {
+  max-width: 100%;
+}
 
-  /* Pseudo-classes ------------------ */
+/* Pseudo-classes ------------------ */
 
 a:link {
   color: rgb(255, 169, 73);
@@ -42,13 +51,92 @@ a:active {
   color: lightcoral;
 }
 
-  /* Main Styles ----------------- */
-  .main-header {
-    padding-top: 80px;
-    height: 1100px;
-    background: black url(../img/saturn.png) no-repeat center;
-    background-size: cover;
-    text-align: center;
-  }
+/* Main Styles ----------------- */
 
-  /* Layout Styles ------------------ */
+.link {
+  text-decoration: none; 
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Layout Styles ------------------ */
+
+.header-wrapper {
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+  padding: var(--space-s);
+  border: 1px solid red;
+}
+
+.header-container {
+  border: 1px solid tomato;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left-section {
+  border: 1px solid palevioletred;
+}
+
+.header-right-section {
+  border: 1px solid violet;
+}
+
+.intro-container{
+  border: 1px solid orange;
+  height: 900px;
+  padding: 80px;
+  background: black url(../img/saturn.png) no-repeat center;
+  background-size: cover;
+
+}
+
+.intro-section {
+  border: 1px solid orangered;
+  /* text-align: center; */
+  height: 100%;
+  /* padding-top: 200px; */
+}
+
+.main-section {
+  border: 1px solid yellow;
+  padding: var(--space-s);
+  /* padding-right: var(--space-m); */
+}
+
+@media (min-width: 1440px) {
+  .main-section{
+    max-width: 1280px;
+  }
+}
+
+.project-wrapper {
+  border: 1px solid purple;
+  margin-bottom: var(--space-m);
+}
+
+.footer-wrapper {
+  border: 1px solid green;
+  position: sticky;
+  bottom: 0px;
+  margin: 0px;
+  padding: var(--space-s);
+}
+
+.footer-section {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left-section {
+  border: 1px solid blueviolet;
+}
+
+.footer-right-section {
+  border: 1px solid orchid;
+}
