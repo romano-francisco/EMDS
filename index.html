@@ -2,10 +2,11 @@
 <html>
     <head>
         <title>EMDS</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/colors.css">
     </head>
 
-    <body id="body">
+    <body id="body" class='light-mode'>
 
         <div class="header-wrapper">
             <header>
@@ -14,7 +15,7 @@
                         left
                     </div>
                     <div class="header-right-section">
-                        right
+                        <button class="js-switch-button switch-button"></button>
                     </div>
                 </div>
             </header>
@@ -60,6 +61,18 @@
                 
             </footer>
         </div>
+
+        <script type="text/javascript">
+            const switchButton = document.querySelector('.js-switch-button')
+      
+            switchButton.addEventListener("click", function(){
+                 if(document.getElementById("body").classList[0] === 'dark-mode'){
+                 document.getElementById("body").classList = 'light-mode'
+                } else {
+                 document.getElementById("body").classList = 'dark-mode'
+                }
+            })
+        </script>
 
     </body>
 
