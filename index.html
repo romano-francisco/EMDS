@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/colors.css">
     </head>
 
-    <body id="body" class='light-mode'>
+    <body id="body" class='dark-mode'>
 
         <div class="header-wrapper show-me-border">
             <header>
@@ -79,10 +79,10 @@
             const switchButton = document.querySelector('.js-switch-button')
       
             switchButton.addEventListener("click", function(){
-                 if(document.getElementById("body").classList[0] === 'dark-mode'){
-                 document.getElementById("body").classList = 'light-mode'
-                } else {
+                 if(document.getElementById("body").classList[0] === 'light-mode'){
                  document.getElementById("body").classList = 'dark-mode'
+                } else {
+                 document.getElementById("body").classList = 'light-mode'
                 }
             })
         </script>
