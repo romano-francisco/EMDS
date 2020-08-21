@@ -4,6 +4,7 @@
         <title>EMDS</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/colors.css">
+        <meta name="viewport" content="width=device-width">
     </head>
 
     <body id="body" class='dark-mode'>
@@ -12,7 +13,9 @@
             <header>
                 <div class="header-container container show-me-border">
                     <div class="header-left-section show-me-border">
-                        left
+                        <svg width="88" height="25" viewBox="0 0 88 25">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C15.0711 24 18.1422 22.8284 20.4853 20.4853L26.6 14.4L36.6572 24.4572L36.6648 24.4496L36.665 24.4498L55.319 5.91887C56.8753 4.36258 59.0252 3.4 61.4001 3.4C66.1497 3.4 70.0001 7.25035 70.0001 12C70.0001 14.3748 69.0375 16.5248 67.4812 18.0811L67.5001 18.1L64.0001 21.6L66.4001 24L88.0001 2.4L85.6001 0L73.3984 12.2017C73.4508 9.06375 72.2798 5.90916 69.8854 3.51472C65.1991 -1.17157 57.6011 -1.17157 52.9148 3.51472L36.6574 19.6574L29 12L38.6 2.4L36.2 0L26.5999 9.60014V9.59985L20.4853 3.51472C18.1422 1.17157 15.0711 0 12 0ZM24.2001 11.9998L18.0811 18.0811C16.5249 19.6374 14.3748 20.6 12 20.6C9.79907 20.6 7.59814 19.7604 5.91888 18.0811C2.56037 14.7226 2.56037 9.27739 5.91888 5.91888C7.59814 4.23962 9.79907 3.4 12 3.4C14.3748 3.4 16.5249 4.36258 18.0811 5.91887L24.1999 11.9998H24.2001Z" fill="white"/>
+                        </svg>
                     </div>
                     <div class="header-right-section show-me-border">
                         <button class="js-switch-button switch-button"></button>
@@ -21,23 +24,37 @@
             </header>
         </div>
        
-        <div>
-
-            <div id='intro' class="intro-container show-me-border">
-                <div class="intro-section container show-me-border">
+            <div id='intro' class="intro-wrapper container show-me-border">
+                <div class="intro-container  show-me-border">
                     <span class='intro-text'>Francisco Romano</span>
                     <h1>Designer</h1>
                 </div>
-                
             </div>
-            <div class="main-section container show-me-border">
-                Featured
-                <div class="project-wrapper show-me-border">
-                    <div class="project1-image">
-                        
-                    </div>
-                    Project 1
+        
+        <div class="main-section-wrapper container show-me-border">
+            <div>
+                
+                <div class="featured-section-title ">
+                    Featured section title
+                   </h2> 
                 </div>
+                
+                <div class="featured-project-wrapper show-me-border">
+                    <div class="featured-project-images-group">
+                        <div class="featured-project-image-left">
+                        </div>
+                        <div class="featured-project-image-right">
+                        </div>
+                    </div>
+                    <h3>
+                        Featured Project 1
+                    </h3>
+                    <Samp>
+                        2020
+                    </Samp>
+
+                </div>
+
                 <div class="project-wrapper show-me-border">
                     <div class="project2-image">
                         
@@ -58,17 +75,16 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="footer-wrapper show-me-border">
             <footer>
-                <div class="footer-section container show-me-border">
+                <div class="footer-container container show-me-border">
                     <div class="footer-left-section show-me-border">
                         left
                     </div>
                     <div class="footer-right-section show-me-border">
-                        <svg width="88" height="25" viewBox="0 0 88 25">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C15.0711 24 18.1422 22.8284 20.4853 20.4853L26.6 14.4L36.6572 24.4572L36.6648 24.4496L36.665 24.4498L55.319 5.91887C56.8753 4.36258 59.0252 3.4 61.4001 3.4C66.1497 3.4 70.0001 7.25035 70.0001 12C70.0001 14.3748 69.0375 16.5248 67.4812 18.0811L67.5001 18.1L64.0001 21.6L66.4001 24L88.0001 2.4L85.6001 0L73.3984 12.2017C73.4508 9.06375 72.2798 5.90916 69.8854 3.51472C65.1991 -1.17157 57.6011 -1.17157 52.9148 3.51472L36.6574 19.6574L29 12L38.6 2.4L36.2 0L26.5999 9.60014V9.59985L20.4853 3.51472C18.1422 1.17157 15.0711 0 12 0ZM24.2001 11.9998L18.0811 18.0811C16.5249 19.6374 14.3748 20.6 12 20.6C9.79907 20.6 7.59814 19.7604 5.91888 18.0811C2.56037 14.7226 2.56037 9.27739 5.91888 5.91888C7.59814 4.23962 9.79907 3.4 12 3.4C14.3748 3.4 16.5249 4.36258 18.0811 5.91887L24.1999 11.9998H24.2001Z" fill="white"/>
-                        </svg>
+                        right
                     </div>
                 </div>
                 

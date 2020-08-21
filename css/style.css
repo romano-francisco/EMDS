@@ -4,9 +4,10 @@
   --space-xs: .5rem;
   --space-s: 1rem;
   --space-m: 1.5rem;
-  --space-l: 5rem;
+  --space-l: 2.5rem;
+  --space-xl: 3.5rem;
 
-  /* Type scale */
+  /* Type scale  -------------------- */
   --font-size-xxs: .625rem;
   --line-height-xxs: .875rem;
 
@@ -47,28 +48,37 @@
 
 @font-face {
   font-family: 'Neue Haas Grotesk TX Pro';
-  src: url('../fonts/NeueHaasGroteskTextBold-3.woff2') format('woff2'),
-      url('../fonts/NeueHaasGroteskTextBold-3.woff') format('woff');
+  src: url('../fonts/NHaasGroteskTXPro-65Md.woff2') format('woff2'),
+      url('../fonts/NHaasGroteskTXPro-65Md.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
+
+/* @font-face {
+  font-family: 'Neue Haas Grotesk TX Pro';
+  src: url('../fonts/NeueHaasGroteskTextBold-3.woff2') format('woff2'),
+      url('../fonts/NeueHaasGroteskTextBold-3.woff') format('woff');
+  font-weight: bolder;
+  font-style: normal;
+} */
 
 body {
   margin: 0;
   font-family: 'Neue Haas Grotesk TX Pro', serif;
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
-  /* background: black url(../img/texture.png); */
 }
 
 h1 {
   font-family: 'Neue Haas Grotesk TX Pro', serif;
   font-size: var(--font-size-d1);
   line-height: var(--line-height-d1);
+  letter-spacing: .125rem;
 }
 
 img {
   max-width: 100%;
+  /* max-height: 100%; */
 }
 
 /* Pseudo-classes ------------------ */
@@ -110,13 +120,13 @@ button:focus {
   /* border: 1px solid red; */
 }
 
-/* Layout Styles ------------------ */
+/* ----------- Header Styles ------------------------------------------------------ */
 
 .header-wrapper {
   position: sticky;
   top: 0px;
   margin: 0px;
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-l) var(--space-l);
   /* border: 1px solid red; */
 }
 
@@ -134,10 +144,13 @@ button:focus {
   /* border: 1px solid violet; */
 }
 
-.intro-container{
+/* ----------- Intro Styles ------------------------------------------------------ */
+
+.intro-wrapper{
   /* border: 1px solid orange; */
   /* margin-top: -80px; */
   height: 500px;
+  padding: var(--space-l) var(--space-l);
   /* padding: 80px; */
   /* background: black url(../img/saturn.png) no-repeat center; */
   /* background-size: cover; */
@@ -145,29 +158,64 @@ button:focus {
 
 }
 
-.intro-section {
+.intro-container {
   /* border: 1px solid rgb(81, 255, 0); */
   /* text-align: center; */
-  padding: var(--space-s) var(--space-m);
+  /* padding: var(--space-s) var(--space-m); */
   margin-top: var(--space-l);
 }
 
-.main-section {
+.intro-text {
+  font-size: var(--font-size-m);
+  font-weight: normal;
+}
+
+/* ----------- Main Section Styles ------------------------------------------------------ */
+
+.main-section-wrapper {
   /* border: 1px solid yellow; */
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-s) var(--space-l);
   /* padding-right: var(--space-m); */
 }
 
-@media (min-width: 1440px) {
-  .main-section, .intro-section{
-    max-width: 1280px;
-  }
+.featured-section-title {
+  margin-bottom: var(--space-l);
 }
 
-.project-wrapper {
-  /* border: 1px solid purple; */
+.featured-project-wrapper {
   margin-bottom: var(--space-m);
 }
+
+/* Floated Columns ------------------ */
+
+.featured-project-image-left {
+  float: left;
+  height: 250px;
+  background: url('../img/project-1.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.featured-project-image-right {
+  float: right;
+  height: 250px;
+  background: url('../img/project-2.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.featured-project-image-left,
+.featured-project-image-right {
+  width: 50%;
+}
+
+/* Float Clearfix ------------------ */
+
+.featured-project-images-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 .project1-image {
   height: 240px;
@@ -197,15 +245,17 @@ button:focus {
   background-size: cover;
 }
 
+/* ----------- Footer Styles ------------------------------------------------------ */
+
 .footer-wrapper {
   /* border: 1px solid green; */
   position: sticky;
   bottom: 0px;
   margin: 0px;
-  padding: var(--space-s) var(--space-m);
+  padding: var(--space-l) var(--space-l);
 }
 
-.footer-section {
+.footer-container {
   /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
@@ -221,7 +271,23 @@ button:focus {
 
 
 
-.intro-text {
-  font-size: var(--font-size-m);
-  font-weight: normal;
+/* Media Queries -------------------- */
+
+@media (min-width: 1440px) {
+  .main-section-wrapper, 
+  .intro-wrapper{
+    max-width: 1440px;
+  }
+}
+
+@media (max-width: 750px) {
+  /* .featured-project-images-group {
+    width: 100%;
+    border-top: none;
+  } */
+  .featured-project-image-left,
+  .featured-project-image-right {
+    float: none;
+    width: 100%;
+  }
 }

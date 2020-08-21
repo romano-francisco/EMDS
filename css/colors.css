@@ -33,11 +33,13 @@
 body.light-mode {
     background-color: var(--lm-neutral-10-min);
     color: var(--lm-neutral-100-strong);
+      /* background: black url(../img/texture.png); */
 }
 
 body.dark-mode {
     background-color: var(--dm-neutral-10-min);
     color: var(--dm-neutral-100-strong);
+      /* background: black url(../img/texture.png); */
 }
 
 /* Main Styles ----------------- */
