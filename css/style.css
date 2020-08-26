@@ -311,4 +311,12 @@ button:focus {
     float: none;
     width: 100%;
   }
+  .header-wrapper,
+  .intro-wrapper,
+  .footer-wrapper {
+    padding: var(--space-s) var(--space-s);
+  }
+  .main-section-wrapper {
+    padding: var(--space-s) var(--space-s);
+  }
 }
