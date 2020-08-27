@@ -53,8 +53,12 @@ body.dark-mode {
     fill: var(--dm-neutral-100-strong);
 }
 
-
 /* Element Styles ----------------- */
+
+
+.featured-project-wrapper:hover .featured-project-images-group {
+    border: 2px solid var(--dm-neutral-100-strong);
+  }
 
 .switch-button { /* La bolita en lm ------- */
     appearance: none;
