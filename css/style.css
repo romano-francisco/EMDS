@@ -84,20 +84,19 @@ img {
 /* Pseudo-classes ------------------ */
 
 a:link {
-  color: rgb(255, 169, 73);
   text-decoration: none;
 }
 
 a:visited {
-  color: lightblue;
+
 }
 
 a:hover {
-  color: rgba(255, 169, 73, .4);
+  text-decoration: underline;
 }
 
 a:active {
-  color: lightcoral;
+
 }
 
 button:focus {
@@ -126,14 +125,14 @@ button:focus {
   position: sticky;
   top: 0px;
   margin: 0px;
-  padding: var(--space-l) var(--space-l);
-  /* border: 1px solid red; */
+  padding: var(--space-s) var(--space-s);
+  /* border: 1px solid blue; */
 }
 
 .header-container {
-  /* border: 1px solid tomato; */
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid blue; */
 }
 
 .header-left-section {
@@ -147,23 +146,19 @@ button:focus {
 /* ----------- Intro Styles ------------------------------------------------------ */
 
 .intro-wrapper{
-  /* border: 1px solid orange; */
-  /* margin-top: -80px; */
-  /* height: 500px; */
-  padding: var(--space-l) var(--space-l);
+  padding: var(--space-s) var(--space-s);
   min-height: calc(100vh - 240px);
-  /* padding: 80px; */
   /* background: black url(../img/saturn.png) no-repeat center;
   background-size: cover; */
   /* border: 1px solid orangered; */
-
 }
 
 .intro-container {
   /* border: 1px solid rgb(81, 255, 0); */
   /* text-align: center; */
   /* padding: var(--space-s) var(--space-m); */
-  margin-top: var(--space-l);
+  margin-top: var(--space-xl);
+  /* border: 1px solid orangered; */
 }
 
 .intro-text {
@@ -173,10 +168,13 @@ button:focus {
 
 /* ----------- Main Section Styles ------------------------------------------------------ */
 
-.main-section-wrapper {
+.main-area-wrapper {
+  padding: var(--space-s) var(--space-s);
   /* border: 1px solid yellow; */
-  padding: var(--space-s) var(--space-l);
-  /* padding-right: var(--space-m); */
+}
+
+.main-area-container {
+  /* border: 1px solid yellow; */
 }
 
 .featured-section-title {
@@ -184,12 +182,14 @@ button:focus {
 }
 
 .featured-project-wrapper {
+  margin-bottom: var(--space-m);
   margin-bottom: var(--space-xl);
+  /* border: 2px solid red; */
 }
 
-.featured-project-wrapper:hover .featured-project-images-group {
-  /* border: 2px solid red; */
-  margin: -2px;
+.featured-project-images-group {
+  border: 2px solid transparent;
+  display: block;
 }
 
 /* Floated Columns ------------------ */
@@ -210,7 +210,8 @@ button:focus {
 
 .featured-project-image-left,
 .featured-project-image-right {
-  width: 49.8%;
+  float: none;
+  width: 100%;
 }
 
 /* Float Clearfix ------------------ */
@@ -254,17 +255,17 @@ button:focus {
 /* ----------- Footer Styles ------------------------------------------------------ */
 
 .footer-wrapper {
-  /* border: 1px solid green; */
   position: sticky;
   bottom: 0px;
   margin: 0px;
-  padding: var(--space-l) var(--space-l);
+  padding: var(--space-s) var(--space-s);
+  /* border: 1px solid green; */
 }
 
 .footer-container {
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid green; */
 }
 
 .footer-left-section {
@@ -286,43 +287,52 @@ button:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries -------------------- */
 
 @media (min-width: 750px) {
-  .main-section-wrapper, 
-  .intro-wrapper{
-    max-width: 1496px;
-  }
-}
 
-@media (max-width: 1440px) {
-  /* .featured-project-images-group {
-    width: 100%;
-    border-top: none;
-  } */
-  .featured-project-image-left,
-  .featured-project-image-right {
-    float: none;
-    width: 100%;
-  }
   .header-wrapper,
   .intro-wrapper,
+  .main-area-wrapper,
   .footer-wrapper {
-    padding: var(--space-s) var(--space-s);
+    padding: var(--space-m) var(--space-m);
   }
-  .main-section-wrapper {
-    padding: var(--space-s) var(--space-s);
+
+  .featured-project-images-group {
+    width: 100%;
+    border-top: none;
   }
+
+  .featured-project-image-left,
+  .featured-project-image-right {
+    float: right;
+    width: 50%;
+  }
+
 }
+
+@media (min-width: 1200px) {
+
+  .header-wrapper,
+  .intro-wrapper,
+  .main-area-wrapper,
+  .footer-wrapper {
+    padding: var(--space-l) var(--space-l);
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .header-wrapper,
+  .intro-wrapper,
+  .main-area-wrapper,
+  .footer-wrapper {
+    padding: var(--space-xl) var(--space-xl);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+}
+
+

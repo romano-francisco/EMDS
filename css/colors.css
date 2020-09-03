@@ -42,6 +42,23 @@ body.dark-mode {
       /* background: black url(../img/texture.png); */
 }
 
+
+a:link {
+    color: var(--dm-neutral-80-regular);
+}
+
+a:visited {
+    color: var(--dm-neutral-80-regular);
+}
+
+a:hover {
+    color: var(--dm-neutral-100-strong);
+}
+
+a:active {
+    color: var(--dm-neutral-100-strong);
+}
+
 /* Main Styles ----------------- */
 
 .logo {
@@ -55,10 +72,10 @@ body.dark-mode {
 
 /* Element Styles ----------------- */
 
-
 .featured-project-wrapper:hover .featured-project-images-group {
     border: 2px solid var(--dm-neutral-100-strong);
-  }
+    margin-top: -2px;
+}
 
 .switch-button { /* La bolita en lm ------- */
     appearance: none;
@@ -101,3 +118,5 @@ body.dark-mode {
     /* background-color: var(--dm-neutral-10-min); */
     border: 2px solid var(--dm-neutral-100-strong);
 }
+
+
