@@ -1,88 +1,88 @@
 :root {
-    --color-base-100: hsla(0,0%,100%,1);
-    --color-base-90: hsla(220,12%,95%,1);
-    --color-base-80: hsla(204,10%,90%,1);
+
+    --color-base-10: hsla(209,50%,12%,1);
+    --color-base-20: hsla(209,30%,19%,1);
+    --color-base-30: hsla(210,15%,29%,1);
+    --color-base-45: hsla(209,10%,45%,1);
+    --color-base-55: hsla(209,10%,55%,1);
     --color-base-70: hsla(210,10%,69%,1);
-    --color-base-60: hsla(209,10%,52%,1);
-    --color-base-50: hsla(209,10%,45%,1);
-    --color-base-40: hsla(210,15%,29%,1);
-    --color-base-30: hsla(209,30%,19%,1);
-    --color-base-20: hsla(209,49%,12%,1);
-    --color-base-10: hsla(208,76%,5%,1);
+    --color-base-90: hsla(204,10%,90%,1);
+    --color-base-95: hsla(220,10%,95%,1);
+
 
 /* Light mode ---------- */
-    --lm-neutral-100-strong: var(--color-base-10);
-    --lm-neutral-80-regular: var(--color-base-40);
-    --lm-neutral-60-light: var(--color-base-60);
-    --lm-neutral-40-lighter: var(--color-base-70);
-    --lm-neutral-20-pale: var(--color-base-80);
-    --lm-neutral-10-min: var(--color-base-90);
+    --lm-base-strong: var(--color-base-10);
+    --lm-base-regular: var(--color-base-30);
+    --lm-base-light: var(--color-base-55);
+    --lm-base-lighter: var(--color-base-70);
+    --lm-base-pale: var(--color-base-90);
+    --lm-base-min: var(--color-base-95);
 
 /* Dark mode ---------- */
-    --dm-neutral-100-strong: var(--color-base-100);
-    --dm-neutral-80-regular: var(--color-base-70);
-    --dm-neutral-60-light: var(--color-base-50);
-    --dm-neutral-40-lighter: var(--color-base-40);
-    --dm-neutral-20-pale: var(--color-base-30);
-    --dm-neutral-10-min: var(--color-base-20);
+    --dm-base-strong: var(--color-base-95);
+    --dm-base-regular: var(--color-base-70);
+    --dm-base-light: var(--color-base-45);
+    --dm-base-lighter: var(--color-base-30);
+    --dm-base-pale: var(--color-base-20);
+    --dm-base-min: var(--color-base-10);
   
 }
 
 /* Base Styles -------------------- */
 
 body.light-mode {
-    background-color: var(--lm-neutral-10-min);
-    color: var(--lm-neutral-100-strong);
+    background-color: var(--lm-base-min);
+    color: var(--lm-base-strong);
       /* background: black url(../img/texture.png); */
 }
 
 body.dark-mode {
-    background-color: var(--dm-neutral-10-min);
-    color: var(--dm-neutral-100-strong);
+    background-color: var(--dm-base-min);
+    color: var(--dm-base-strong);
       /* background: black url(../img/texture.png); */
 }
 
 
 a:link {
-    color: var(--dm-neutral-80-regular);
+    color: var(--dm-base-regular);
 }
 
 a:visited {
-    color: var(--dm-neutral-80-regular);
+    color: var(--dm-base-regular);
 }
 
 a:hover {
-    color: var(--dm-neutral-100-strong);
+    color: var(--dm-base-strong);
 }
 
 a:active {
-    color: var(--dm-neutral-100-strong);
+    color: var(--dm-base-strong);
 }
 
 /* Main Styles ----------------- */
 
 .logo {
-    fill: var(--lm-neutral-100-strong);
+    fill: var(--lm-base-strong);
 }
 
 .dark-mode
 .logo {
-    fill: var(--dm-neutral-100-strong);
+    fill: var(--dm-base-strong);
 }
 
 /* Element Styles ----------------- */
 
 .featured-project-wrapper:hover .featured-project-images-group {
-    border: 2px solid var(--dm-neutral-100-strong);
+    border: 2px solid var(--dm-base-strong);
     margin-top: -2px;
 }
 
 .switch-button { /* La bolita en lm ------- */
     appearance: none;
-    /* background-color: var(--lm-neutral-40-lighter); */
-    /* background-color: var(--lm-neutral-10-min); */
+    /* background-color: var(--lm-base-lighter); */
+    /* background-color: var(--lm-base-min); */
     background-color: transparent;
-    border: 2px solid var(--lm-neutral-100-strong);
+    border: 2px solid var(--lm-base-strong);
     /* border: 0; */
     height: 24px;
     width: 40px;
@@ -93,8 +93,8 @@ a:active {
   
 .switch-button:after {
     content: '';
-    /* background-color: var(--lm-neutral-10-min); */
-    border: 2px solid var(--lm-neutral-100-strong);
+    /* background-color: var(--lm-base-min); */
+    border: 2px solid var(--lm-base-strong);
     height: 16px;
     width: 16px;
     display: block;
@@ -108,15 +108,15 @@ a:active {
 .dark-mode 
 .switch-button:after { /* La bolita en dm ------- */
     transform: translateX(16px);
-    /* background-color: var(--dm-neutral-10-min); */
-    border: 2px solid var(--dm-neutral-100-strong);
+    /* background-color: var(--dm-base-min); */
+    border: 2px solid var(--dm-base-strong);
 }
   
 .dark-mode 
 .switch-button {
-    /* background-color: var(--dm-neutral-10-min); */
-    /* background-color: var(--dm-neutral-10-min); */
-    border: 2px solid var(--dm-neutral-100-strong);
+    /* background-color: var(--dm-base-min); */
+    /* background-color: var(--dm-base-min); */
+    border: 2px solid var(--dm-base-strong);
 }
 
 
