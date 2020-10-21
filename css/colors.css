@@ -9,7 +9,6 @@
     --color-base-90: hsla(204,10%,90%,1);
     --color-base-95: hsla(220,10%,95%,1);
 
-
 /* Light mode ---------- */
     --lm-base-strong: var(--color-base-10);
     --lm-base-regular: var(--color-base-30);
@@ -62,12 +61,13 @@ a:active {
 /* Main Styles ----------------- */
 
 .logo {
-    fill: var(--lm-base-strong);
+    stroke: var(--lm-base-strong);
+    fill: none;
 }
 
 .dark-mode
 .logo {
-    fill: var(--dm-base-strong);
+    stroke: var(--dm-base-strong);
 }
 
 /* Element Styles ----------------- */
