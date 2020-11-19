@@ -317,7 +317,7 @@ button:focus {
 
   .intro-wrapper,
   .main-area-wrapper {
-    padding: var(--space-l) 12%;
+    padding: var(--space-l) 8%;
     /* padding: var(--space-m) var(--space-m); */
   }
 
@@ -344,7 +344,7 @@ button:focus {
 
   .intro-wrapper,
   .main-area-wrapper {
-    padding: var(--space-xl) 16%;
+    padding: var(--space-xl) 8%;
     /* padding: var(--space-l) var(--space-l); */
   }
 
@@ -360,7 +360,7 @@ button:focus {
 
   .intro-wrapper,
   .main-area-wrapper {
-    padding: var(--space-xl) 20%;
+    padding: var(--space-xl) 8%;
     /* padding: var(--space-xl) var(--space-xl); */
     /* width: 1200px;
     margin: 0 auto; */
