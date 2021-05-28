@@ -142,13 +142,17 @@ button:focus {
 }
 
 .header-left-section {
-  /* border: 1px solid palevioletred; */
+  border: 1px solid palevioletred;
 }
 
 .header-right-section {
-  /* border: 1px solid violet; */
+  border: 1px solid violet;
 }
+.main-menu li {
+  display: inline-block;
+  padding-left: var(--space-xs);
 
+}
 /* ----------- Intro Styles ------------------------------------------------------ */
 
 .intro-wrapper{
