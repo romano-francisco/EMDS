@@ -120,7 +120,7 @@ button:focus {
   box-shadow: none;
 }
 
-/* Main Styles ----------------- */
+/* Main Styles / Components ----------------- */
 
 .link {
   text-decoration: none; 
@@ -131,9 +131,34 @@ button:focus {
   margin-right: auto;
 } */
 
-.show-me-border {
-  /* border: 1px solid red; */
+.button-primary {
+  padding: var(--space-xs) var(--space-s);
+  border-radius: 0px;
+  border: none;
+  min-height: var(--space-l);
+  font-size: var(--font-size-m);
 }
+.button-primary:hover {
+
+}
+
+.input {
+  margin-bottom: var(--space-m);
+  border-radius: 0px;
+  border: none;
+  min-height: var(--space-l);
+  font-size: var(--font-size-m);
+  padding: 0 var(--space-xs) ;
+}
+
+.form {
+  width: 50%;
+  padding: var(--space-l) var(--space-l);
+  display: flex;
+  flex-direction: column;
+}
+
+/* show-me-borders ----------------- */
 
 /* .wrapper {
   border: 1px solid orange;
@@ -201,7 +226,15 @@ button:focus {
 
 }
 
+
+
+
+
+
+/* ----------- Project cards ------------------------------------------------------ */
+
 .project-card-box {
+  /* cursor: pointer; */
   display: flex;
   justify-content: space-between;
   padding-bottom: var(--space-m);
@@ -210,10 +243,22 @@ button:focus {
   border-top: 1px solid var(--dm-base-pale);
 
 }
+.project-card-left-section {
+  display: flex;
+  width: 50%;
+
+
+}
 .project-number {
   color: var(--dm-base-light);
 }
+.project-number:hover {
+  color: var(--dm-base-regular);
+}
+.project-card-right-section {
+  width: 50%;
 
+}
 
 
 .featured-project-wrapper {
@@ -256,8 +301,6 @@ button:focus {
   clear: both;
 }
 
-
-
 .project1-image {
   height: 240px;
   width: 100%;
@@ -285,6 +328,16 @@ button:focus {
   background: url('../img/project-4.jpg') no-repeat center;
   background-size: cover;
 }
+
+
+
+/* ----------- Form Styles ------------------------------------------------------ */
+
+.form-section {
+  display: flex;
+}
+
+
 
 /* ----------- Footer Styles ------------------------------------------------------ */
 

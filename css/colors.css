@@ -62,6 +62,26 @@ a:active {
     color: var(--dm-base-strong);
 }
 
+.button-primary {
+    cursor: pointer;
+    background-color: var(--dm-base-regular);
+    color: var(--dm-base-min);
+  }
+.button-primary:hover {
+    background-color: var(--dm-base-strong);
+    color: var(--dm-base-min);
+  }
+
+  .button-primary:active {
+    background-color: var(--dm-base-regular);
+  }
+
+.input {
+    background-color: var(--dm-base-pale);
+    border: 1px solid var(--dm-base-lighter);
+    color: var(--dm-base-strong);
+}
+
 /* Main Styles ----------------- */
 
 .logo {
