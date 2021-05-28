@@ -9,6 +9,16 @@
     --color-base-90: hsla(204,10%,90%,1);
     --color-base-95: hsla(220,10%,95%,1);
 
+
+    /* Dark mode ---------- */
+    --dm-base-strong: var(--color-base-95);
+    --dm-base-regular: var(--color-base-70);
+    --dm-base-light: var(--color-base-45);
+    --dm-base-lighter: var(--color-base-30);
+    --dm-base-pale: var(--color-base-20);
+    --dm-base-min: var(--color-base-10);
+
+
 /* Light mode ---------- */
     --lm-base-strong: var(--color-base-10);
     --lm-base-regular: var(--color-base-30);
@@ -17,13 +27,7 @@
     --lm-base-pale: var(--color-base-90);
     --lm-base-min: var(--color-base-95);
 
-/* Dark mode ---------- */
-    --dm-base-strong: var(--color-base-95);
-    --dm-base-regular: var(--color-base-70);
-    --dm-base-light: var(--color-base-45);
-    --dm-base-lighter: var(--color-base-30);
-    --dm-base-pale: var(--color-base-20);
-    --dm-base-min: var(--color-base-10);
+
   
 }
 
