@@ -62,36 +62,89 @@ a:active {
     color: var(--dm-base-strong);
 }
 
+/* Button -------------------- */
+.dark-mode
 .button-primary {
     cursor: pointer;
     background-color: var(--dm-base-regular);
     color: var(--dm-base-min);
-  }
+}
+.dark-mode
 .button-primary:hover {
     background-color: var(--dm-base-strong);
     color: var(--dm-base-min);
-  }
-
-  .button-primary:active {
+}
+.dark-mode
+.button-primary:active {
     background-color: var(--dm-base-regular);
-  }
+}
 
+.light-mode
+.button-primary {
+    cursor: pointer;
+    background-color: var(--lm-base-regular);
+    color: var(--lm-base-min);
+}
+.light-mode
+.button-primary:hover {
+    background-color: var(--lm-base-strong);
+    color: var(--lm-base-min);
+}
+.light-mode
+.button-primary:active {
+    background-color: var(--lm-base-regular);
+}
+
+/* Input -------------------- */
+.dark-mode
 .input {
     background-color: var(--dm-base-pale);
     border: 1px solid var(--dm-base-lighter);
     color: var(--dm-base-strong);
 }
-
-/* Main Styles ----------------- */
-
-.logo {
-    stroke: var(--lm-base-strong);
-    fill: none;
+.dark-mode
+.input:active {
+    border: 1px solid var(--dm-base-light);
 }
+.dark-mode
+.input:focus {
+    border: 1px solid var(--dm-base-light);
+}
+
+.light-mode
+.input {
+    background-color: var(--lm-base-pale);
+    border: 1px solid var(--lm-base-lighter);
+    color: var(--lm-base-strong);
+}
+.light-mode
+.input:active {
+    border: 1px solid var(--lm-base-light);
+}
+.light-mode
+.input:focus {
+    border: 1px solid var(--lm-base-light);
+}
+
+/* Logo ----------------- */
 
 .dark-mode
 .logo {
+    stroke: var(--dm-base-regular);
+}
+.dark-mode
+.logo:hover {
     stroke: var(--dm-base-strong);
+}
+
+.light-mode
+.logo {
+    stroke: var(--lm-base-regular);
+    fill: none;
+}
+.light-mode
+.logo:hover {
+    stroke: var(--lm-base-strong);
 }
 
 /* Element Styles ----------------- */
@@ -99,7 +152,7 @@ a:active {
 .featured-project-wrapper:hover .featured-project-images-group {
     border: 2px solid var(--dm-base-strong);
     margin-top: -2px;
-}
+    }
 
 .switch-button { /* La bolita en lm ------- */
     appearance: none;

@@ -120,6 +120,10 @@ button:focus {
   box-shadow: none;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 /* Main Styles / Components ----------------- */
 
 .link {
@@ -149,6 +153,15 @@ button:focus {
   min-height: var(--space-l);
   font-size: var(--font-size-m);
   padding: 0 var(--space-xs) ;
+}
+.input:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+.input:active {
+  outline-color: transparent;
+  outline-style: none;
+  border: none;
 }
 
 .form {
@@ -187,6 +200,7 @@ button:focus {
 }
 .header-left-section {
 }
+
 .header-right-section {
 }
 .main-menu li {
