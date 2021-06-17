@@ -71,7 +71,7 @@ body {
   font-family: 'Neue Haas Grotesk TX Pro', serif;
   font-size: var(--font-size-m);
   line-height: var(--line-height-m);
-  letter-spacing: .06rem;
+  letter-spacing: .08rem;
   font-weight: normal;
 }
 
@@ -148,11 +148,15 @@ button:focus {
 
 .input {
   margin-bottom: var(--space-m);
-  border-radius: 0px;
+  border-radius: 2px;
   border: none;
   min-height: var(--space-l);
   font-size: var(--font-size-m);
   padding: 0 var(--space-xs) ;
+  letter-spacing: .08rem;
+}
+.input:hover {
+  cursor: pointer;
 }
 .input:focus {
   outline-color: transparent;
@@ -162,6 +166,9 @@ button:focus {
   outline-color: transparent;
   outline-style: none;
   border: none;
+}
+.input-label {
+  font-size: var(--font-size-xs);
 }
 
 .form {

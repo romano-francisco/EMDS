@@ -1,5 +1,11 @@
 :root {
 
+    --color-black-100: hsla(208,76%,5%,1);
+    --color-black-50: hsla(208,76%,5%,0.5);
+
+    --color-white-100: hsla(0,0%,100%,1);
+    --color-white-50: hsla(0,0%,100%,0.5);
+
     --color-base-10: hsla(209,50%,12%,1);
     --color-base-20: hsla(209,30%,19%,1);
     --color-base-30: hsla(210,15%,29%,1);
@@ -9,8 +15,19 @@
     --color-base-90: hsla(204,10%,90%,1);
     --color-base-95: hsla(220,10%,95%,1);
 
+    --color-emerald-10: hsla(180,75%,6%,1);
+    --color-emerald-20: hsla(180,75%,12%,1);
+    --color-emerald-30: hsla(180,75%,18%,1);
+    --color-emerald-45: hsla(180,75%,28%,1);
+    --color-emerald-55: hsla(180,75%,33%,1);
+    --color-emerald-70: hsla(180,75%,53%,1);
+    --color-emerald-90: hsla(180,75%,84%,1);
+    --color-emerald-95: hsla(180,75%,92%,1);
 
     /* Dark mode ---------- */
+
+    --dm-alpha-50: var(--color-black-50);
+
     --dm-base-strong: var(--color-base-95);
     --dm-base-regular: var(--color-base-70);
     --dm-base-light: var(--color-base-45);
@@ -18,8 +35,18 @@
     --dm-base-pale: var(--color-base-20);
     --dm-base-min: var(--color-base-10);
 
+    --dm-emerald-strong: var(--color-emerald-95);
+    --dm-emerald-regular: var(--color-emerald-70);
+    --dm-emerald-light: var(--color-emerald-45);
+    --dm-emerald-lighter: var(--color-emerald-30);
+    --dm-emerald-pale: var(--color-emerald-20);
+    --dm-emerald-min: var(--color-emerald-10);
+
 
 /* Light mode ---------- */
+
+    --lm-alpha-50: var(--color-white-50);
+
     --lm-base-strong: var(--color-base-10);
     --lm-base-regular: var(--color-base-30);
     --lm-base-light: var(--color-base-55);
@@ -27,7 +54,12 @@
     --lm-base-pale: var(--color-base-90);
     --lm-base-min: var(--color-base-95);
 
-
+    --lm-emerald-strong: var(--color-emerald-95);
+    --lm-emerald-regular: var(--color-emerald-70);
+    --lm-emerald-light: var(--color-emerald-45);
+    --lm-emerald-lighter: var(--color-emerald-30);
+    --lm-emerald-pale: var(--color-emerald-20);
+    --lm-emerald-min: var(--color-emerald-10);
   
 }
 
@@ -96,34 +128,65 @@ a:active {
 }
 
 /* Input -------------------- */
+
+.dark-mode
+.input-label {
+    color: var(--dm-base-regular);
+  }
+
 .dark-mode
 .input {
-    background-color: var(--dm-base-pale);
-    border: 1px solid var(--dm-base-lighter);
+    background-color: var(--dm-alpha-50);
+    border: 1px solid var(--dm-base-light);
+    color: var(--dm-base-regular);
+}
+.dark-mode
+.input:hover {
+    background-color: var(--dm-alpha-50);
+    border: 1px solid var(--dm-base-regular);
+    color: var(--dm-base-regular);
+}
+.dark-mode
+.input:active {
+    background-color: var(--dm-alpha-50);
+    border: 1px solid var(--dm-base-strong);
     color: var(--dm-base-strong);
 }
 .dark-mode
-.input:active {
-    border: 1px solid var(--dm-base-light);
-}
-.dark-mode
 .input:focus {
-    border: 1px solid var(--dm-base-light);
+    background-color: var(--dm-alpha-50);
+    border: 1px solid var(--dm-base-strong);
+    color: var(--dm-base-strong);
 }
 
 .light-mode
+.input-label {
+    color: var(--lm-base-regular);
+  }
+
+.light-mode
 .input {
-    background-color: var(--lm-base-pale);
-    border: 1px solid var(--lm-base-lighter);
-    color: var(--lm-base-strong);
+    background-color: var(--lm-alpha-50);
+    border: 1px solid var(--lm-base-light);
+    color: var(--lm-base-regular);
+}
+.light-mode
+.input:hover {
+    background-color: var(--lm-alpha-50);
+    border: 1px solid var(--lm-base-regular);
+    color: var(--lm-base-regular);
 }
 .light-mode
 .input:active {
-    border: 1px solid var(--lm-base-light);
+    background-color: var(--lm-alpha-50);
+    border: 1px solid var(--lm-base-strong);
+    color: var(--lm-base-strong);
 }
 .light-mode
 .input:focus {
-    border: 1px solid var(--lm-base-light);
+    background-color: var(--lm-alpha-50);
+    border: 1px solid var(--lm-base-strong);
+    color: var(--lm-base-strong);
 }
 
 /* Logo ----------------- */
@@ -131,6 +194,7 @@ a:active {
 .dark-mode
 .logo {
     stroke: var(--dm-base-regular);
+    fill: none;z
 }
 .dark-mode
 .logo:hover {
