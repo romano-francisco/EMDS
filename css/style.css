@@ -223,6 +223,7 @@ button:focus {
   /* padding: var(--space-s) var(--space-s); */
   /* background: black url(../img/saturn.png) no-repeat center;
   background-size: cover; */
+ 
 }
 .intro-container {
   margin-top: var(--space-xl);

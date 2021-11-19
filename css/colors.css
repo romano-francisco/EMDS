@@ -193,22 +193,22 @@ a:active {
 
 .dark-mode
 .logo {
-    stroke: var(--dm-base-regular);
+    stroke: var(--dm-base-strong);
     fill: none;z
 }
 .dark-mode
 .logo:hover {
-    stroke: var(--dm-base-strong);
+    stroke: var(--dm-base-regular);
 }
 
 .light-mode
 .logo {
-    stroke: var(--lm-base-regular);
+    stroke: var(--lm-base-strong);
     fill: none;
 }
 .light-mode
 .logo:hover {
-    stroke: var(--lm-base-strong);
+    stroke: var(--lm-base-regular);
 }
 
 /* Element Styles ----------------- */
