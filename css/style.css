@@ -137,8 +137,7 @@ button:focus {
 
 .button-primary {
   padding: var(--space-xs) var(--space-s);
-  border-radius: 0px;
-  border: none;
+  border-radius: 1px;
   min-height: var(--space-l);
   font-size: var(--font-size-m);
 }
@@ -148,8 +147,7 @@ button:focus {
 
 .input {
   margin-bottom: var(--space-m);
-  border-radius: 2px;
-  border: none;
+  border-radius: 1px;
   min-height: var(--space-l);
   font-size: var(--font-size-m);
   padding: 0 var(--space-xs) ;
@@ -165,7 +163,6 @@ button:focus {
 .input:active {
   outline-color: transparent;
   outline-style: none;
-  border: none;
 }
 .input-label {
   font-size: var(--font-size-xs);

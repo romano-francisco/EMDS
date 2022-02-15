@@ -1,214 +1,226 @@
 :root {
+    --color-emerald-base-strongest: hsla(180,50%,95%,1);
+    --color-emerald-base-stronger: hsla(180,29%,77%,1);
+    --color-emerald-base-strong: hsla(180,21%,56%,1);
+    --color-emerald-base-regular: hsla(180,20%,43%,1);
+    --color-emerald-base-light: hsla(180,22%,33%,1);
+    --color-emerald-base-lighter: hsla(180,30%,22%,1);
+    --color-emerald-base-lightest: hsla(180,39%,13%,1);
+    --color-emerald-base-pale: hsla(180,49%,7%,1);
 
-    --color-black-100: hsla(208,76%,5%,1);
-    --color-black-50: hsla(208,76%,5%,0.5);
+    --color-emerald-accent-stronger: hsla(180,62%,64%,1);
+    --color-emerald-accent-strong: hsla(180,65%,42%,1);
+    --color-emerald-accent-regular: hsla(180,66%,33%,1);
+    --color-emerald-accent-light: hsla(180,65%,26%,1);
 
-    --color-white-100: hsla(0,0%,100%,1);
-    --color-white-50: hsla(0,0%,100%,0.5);
+    --color-emerald-backstay: hsla(200,52%,5%,1);
 
-    --color-base-10: hsla(209,50%,12%,1);
-    --color-base-20: hsla(209,30%,19%,1);
-    --color-base-30: hsla(210,15%,29%,1);
-    --color-base-45: hsla(209,10%,45%,1);
-    --color-base-55: hsla(209,10%,55%,1);
-    --color-base-70: hsla(210,10%,69%,1);
-    --color-base-90: hsla(204,10%,90%,1);
-    --color-base-95: hsla(220,10%,95%,1);
+    --color-blue-base-strongest: hsla(200,50%,5%,1);
+    --color-blue-base-stronger: hsla(200,33%,19%,1);
+    --color-blue-base-strong: hsla(200,23%,31%,1);
+    --color-blue-base-regular: hsla(200,20%,42%,1);
+    --color-blue-base-light: hsla(200,21%,53%,1);
+    --color-blue-base-lighter: hsla(200,24%,66%,1);
+    --color-blue-base-lightest: hsla(200,33%,82%,1);
+    --color-blue-base-pale: hsla(200,42%,90%,1);
 
-    --color-emerald-10: hsla(180,75%,6%,1);
-    --color-emerald-20: hsla(180,75%,12%,1);
-    --color-emerald-30: hsla(180,75%,18%,1);
-    --color-emerald-45: hsla(180,75%,28%,1);
-    --color-emerald-55: hsla(180,75%,33%,1);
-    --color-emerald-70: hsla(180,75%,53%,1);
-    --color-emerald-90: hsla(180,75%,84%,1);
-    --color-emerald-95: hsla(180,75%,92%,1);
+    --color-blue-accent-stronger: hsla(200,64%,17%,1);
+    --color-blue-accent-strong: hsla(200,65%,28%,1);
+    --color-blue-accent-regular: hsla(200,65%,38%,1);
+    --color-blue-accent-light: hsla(200,64%,48%,1);
+
+    --color-blue-backstay: hsla(200,52%,95%,1);
 
     /* Dark mode ---------- */
 
-    --dm-alpha-50: var(--color-black-50);
+    --dm-base-strongest: var(--color-emerald-base-strongest);
+    --dm-base-stronger: var(--color-emerald-base-stronger);
+    --dm-base-strong: var(--color-emerald-base-strong);
+    --dm-base-regular: var(--color-emerald-base-regular);
+    --dm-base-light: var(--color-emerald-base-light);
+    --dm-base-lighter: var(--color-emerald-base-lighter);
+    --dm-base-lightest: var(--color-emerald-base-lightest);
+    --dm-base-pale: var(--color-emerald-base-pale);
 
-    --dm-base-strong: var(--color-base-95);
-    --dm-base-regular: var(--color-base-70);
-    --dm-base-light: var(--color-base-45);
-    --dm-base-lighter: var(--color-base-30);
-    --dm-base-pale: var(--color-base-20);
-    --dm-base-min: var(--color-base-10);
+    --dm-accent-stronger: var(--color-emerald-accent-stronger);
+    --dm-accent-strong: var(--color-emerald-accent-strong);
+    --dm-accent-regular: var(--color-emerald-accent-regular);
+    --dm-accent-light: var(--color-emerald-accent-light);
 
-    --dm-emerald-strong: var(--color-emerald-95);
-    --dm-emerald-regular: var(--color-emerald-70);
-    --dm-emerald-light: var(--color-emerald-45);
-    --dm-emerald-lighter: var(--color-emerald-30);
-    --dm-emerald-pale: var(--color-emerald-20);
-    --dm-emerald-min: var(--color-emerald-10);
-
+    --dm-backstay: var(--color-emerald-backstay);
 
 /* Light mode ---------- */
+    --lm-base-strongest: var(--color-blue-base-strongest);
+    --lm-base-stronger: var(--color-blue-base-stronger);
+    --lm-base-strong: var(--color-blue-base-strong);
+    --lm-base-regular: var(--color-blue-base-regular);
+    --lm-base-light: var(--color-blue-base-light);
+    --lm-base-lighter: var(--color-blue-base-lighter);
+    --lm-base-lightest: var(--color-blue-base-lightest);
+    --lm-base-pale: var(--color-blue-base-pale);
 
-    --lm-alpha-50: var(--color-white-50);
+    --lm-accent-stronger: var(--color-blue-accent-stronger);
+    --lm-accent-strong: var(--color-blue-accent-strong);
+    --lm-accent-regular: var(--color-blue-accent-regular);
+    --lm-accent-light: var(--color-blue-accent-light);
 
-    --lm-base-strong: var(--color-base-10);
-    --lm-base-regular: var(--color-base-30);
-    --lm-base-light: var(--color-base-55);
-    --lm-base-lighter: var(--color-base-70);
-    --lm-base-pale: var(--color-base-90);
-    --lm-base-min: var(--color-base-95);
-
-    --lm-emerald-strong: var(--color-emerald-95);
-    --lm-emerald-regular: var(--color-emerald-70);
-    --lm-emerald-light: var(--color-emerald-45);
-    --lm-emerald-lighter: var(--color-emerald-30);
-    --lm-emerald-pale: var(--color-emerald-20);
-    --lm-emerald-min: var(--color-emerald-10);
-  
+    --lm-backstay: var(--color-blue-backstay);
 }
 
 /* Base Styles -------------------- */
 
 body.light-mode {
-    background-color: var(--lm-base-min);
+    background-color: var(--lm-backstay);
     color: var(--lm-base-strong);
       /* background: black url(../img/texture.png); */
 }
 
 body.dark-mode {
-    background-color: var(--dm-base-min);
+    background-color: var(--dm-backstay);
     color: var(--dm-base-strong);
       /* background: black url(../img/texture.png); */
 }
 
 
 a:link {
-    color: var(--dm-base-regular);
+    color: var(--dm-accent-regular);
 }
 
 a:visited {
-    color: var(--dm-base-regular);
+    color: var(--dm-accent-regular);
 }
 
 a:hover {
-    color: var(--dm-base-strong);
+    color: var(--dm-accent-strong);
 }
 
 a:active {
-    color: var(--dm-base-strong);
+    color: var(--dm-accent-strong);
 }
 
 /* Button -------------------- */
 .dark-mode
 .button-primary {
     cursor: pointer;
-    background-color: var(--dm-base-regular);
-    color: var(--dm-base-min);
+    background-color: var(--dm-accent-regular);
+    border: 1px solid var(--dm-accent-strong);
+    color: var(--dm-backstay);
 }
 .dark-mode
 .button-primary:hover {
-    background-color: var(--dm-base-strong);
-    color: var(--dm-base-min);
+    background-color: var(--dm-accent-strong);
+    border: 1px solid var(--dm-accent-stronger);
 }
 .dark-mode
 .button-primary:active {
-    background-color: var(--dm-base-regular);
+    background-color: var(--dm-base-stronger);
+    border: 1px solid var(--dm-accent-stronger);
 }
 
 .light-mode
 .button-primary {
     cursor: pointer;
-    background-color: var(--lm-base-regular);
-    color: var(--lm-base-min);
+    background-color: var(--lm-accent-regular);
+    border: 1px solid var(--lm-accent-strong);
+    color: var(--lm-backstay);
 }
 .light-mode
 .button-primary:hover {
-    background-color: var(--lm-base-strong);
-    color: var(--lm-base-min);
+    background-color: var(--lm-accent-strong);
+    border: 1px solid var(--lm-accent-stronger);
 }
 .light-mode
 .button-primary:active {
-    background-color: var(--lm-base-regular);
+    background-color: var(--lm-base-stronger);
+    border: 1px solid var(--lm-accent-stronger);
 }
 
 /* Input -------------------- */
 
 .dark-mode
 .input-label {
-    color: var(--dm-base-regular);
+    color: var(--dm-base-strong);
   }
 
 .dark-mode
 .input {
-    background-color: var(--dm-alpha-50);
+    background-color: var(--dm-backstay);
     border: 1px solid var(--dm-base-light);
-    color: var(--dm-base-regular);
+    color: var(--dm-base-strong);
 }
 .dark-mode
 .input:hover {
-    background-color: var(--dm-alpha-50);
+    background-color: var(--dm-base-pale);
     border: 1px solid var(--dm-base-regular);
-    color: var(--dm-base-regular);
+    color: var(--dm-base-stronger);
 }
 .dark-mode
 .input:active {
-    background-color: var(--dm-alpha-50);
-    border: 1px solid var(--dm-base-strong);
-    color: var(--dm-base-strong);
+    background-color: var(--dm-base-pale);
+    border: 1px solid var(--dm-base-stronger);
+    color: var(--dm-base-strongest);
 }
 .dark-mode
 .input:focus {
-    background-color: var(--dm-alpha-50);
-    border: 1px solid var(--dm-base-strong);
-    color: var(--dm-base-strong);
+    /* background-color: var(--dm-base-pale); */
+    background-color: var(--dm-backstay);
+    border: 1px solid var(--dm-base-stronger);
+    color: var(--dm-base-strongest);
 }
+
 
 .light-mode
 .input-label {
-    color: var(--lm-base-regular);
+    color: var(--lm-base-strong);
   }
 
 .light-mode
 .input {
-    background-color: var(--lm-alpha-50);
+    background-color: var(--lm-backstay);
     border: 1px solid var(--lm-base-light);
-    color: var(--lm-base-regular);
+    color: var(--lm-base-strong);
 }
 .light-mode
 .input:hover {
-    background-color: var(--lm-alpha-50);
+    background-color: var(--lm-base-pale);
     border: 1px solid var(--lm-base-regular);
-    color: var(--lm-base-regular);
+    color: var(--lm-base-stronger);
 }
 .light-mode
 .input:active {
-    background-color: var(--lm-alpha-50);
-    border: 1px solid var(--lm-base-strong);
-    color: var(--lm-base-strong);
+    background-color: var(--lm-base-pale);
+    background-color: white;
+    border: 1px solid var(--lm-base-stronger);
+    color: var(--lm-base-strongest);
 }
 .light-mode
 .input:focus {
-    background-color: var(--lm-alpha-50);
-    border: 1px solid var(--lm-base-strong);
-    color: var(--lm-base-strong);
+    /* background-color: var(--lm-base-pale); */
+    background-color: var(--lm-backstay);
+    border: 1px solid var(--lm-base-stronger);
+    color: var(--lm-base-strongest);
 }
 
 /* Logo ----------------- */
 
 .dark-mode
 .logo {
-    stroke: var(--dm-base-strong);
-    fill: none;z
+    stroke: var(--dm-accent-regular);
+    fill: none;
 }
 .dark-mode
 .logo:hover {
-    stroke: var(--dm-base-regular);
+    stroke: var(--dm-accent-strong);
 }
 
 .light-mode
 .logo {
-    stroke: var(--lm-base-strong);
+    stroke: var(--lm-accent-regular);
     fill: none;
 }
 .light-mode
 .logo:hover {
-    stroke: var(--lm-base-regular);
+    stroke: var(--lm-accent-strong);
 }
 
 /* Element Styles ----------------- */
