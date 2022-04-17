@@ -205,28 +205,36 @@ a:active {
 
 .dark-mode
 .logo {
-    stroke: var(--dm-accent-regular);
-    fill: none;
+    fill: var(--dm-base-regular);
+    stroke: none;
 }
 .dark-mode
 .logo:hover {
-    stroke: var(--dm-accent-strong);
+    fill: var(--dm-accent-strong);
+}
+.dark-mode
+.logo:active {
+    fill: var(--dm-accent-stronger)!important;
 }
 
 .light-mode
 .logo {
-    stroke: var(--lm-accent-regular);
-    fill: none;
+    fill: var(--lm-base-regular);
+    stroke: none;
 }
 .light-mode
 .logo:hover {
-    stroke: var(--lm-accent-strong);
+    fill: var(--lm-accent-strong);
+}
+.light-mode
+.logo:active {
+    fill: var(--lm-accent-stronger)!important;
 }
 
 /* Element Styles ----------------- */
 
 .featured-project-wrapper:hover .featured-project-images-group {
-    border: 2px solid var(--dm-base-strong);
+    border: 2px solid var(--dm-base-stronger);
     margin-top: -2px;
     }
 
@@ -235,7 +243,7 @@ a:active {
     /* background-color: var(--lm-base-lighter); */
     /* background-color: var(--lm-base-min); */
     background-color: transparent;
-    border: 2px solid var(--lm-base-strong);
+    border: 2px solid var(--lm-base-stronger);
     /* border: 0; */
     height: 24px;
     width: 40px;
@@ -247,7 +255,7 @@ a:active {
 .switch-button:after {
     content: '';
     /* background-color: var(--lm-base-min); */
-    border: 2px solid var(--lm-base-strong);
+    border: 2px solid var(--lm-base-stronger);
     height: 16px;
     width: 16px;
     display: block;
@@ -262,14 +270,14 @@ a:active {
 .switch-button:after { /* La bolita en dm ------- */
     transform: translateX(16px);
     /* background-color: var(--dm-base-min); */
-    border: 2px solid var(--dm-base-strong);
+    border: 2px solid var(--dm-base-stronger);
 }
   
 .dark-mode 
 .switch-button {
     /* background-color: var(--dm-base-min); */
     /* background-color: var(--dm-base-min); */
-    border: 2px solid var(--dm-base-strong);
+    border: 2px solid var(--dm-base-stronger);
 }
 
 
